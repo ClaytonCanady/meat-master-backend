@@ -1,11 +1,12 @@
 from django.db import models
 from django.conf import settings
+from django.contrib.auth.models import User
 # Create your models here.
+
+
 class Recipe(models.Model):
     author = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-    )
+        User, related_name="recipe", on_delete=models.CASCADE, null=True)
     name = models.CharField(max_length=100)
     description = models.CharField(max_length=1000)
     ingredients = models.CharField(max_length=1000)
