@@ -15,6 +15,7 @@ whitenoise = "*"
 dj-database-url = "*"
 gunicorn = "*"
 django-rest-knox = "*"
+djangorestframework-jwt = "*"
 
 [requires]
 python_version = "3.8"
