@@ -36,7 +36,7 @@ SIMPLE_JWT = {
 }
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    'https://meat-master-frontend.herokuapp.com'
+    'https://meat-master-front.herokuapp.com'
 ]
 
 
